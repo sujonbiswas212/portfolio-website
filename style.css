@@ -1,0 +1,580 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+}
+
+html,body{
+     scroll-behavior: smooth;
+     background-color: rgb(104, 104, 104);
+    
+}
+
+/* costom scrollbar */
+
+::-webkit-scrollbar{
+     width: 10px;
+     
+}
+
+::-webkit-scrollbar-track{
+     background: rgba(244, 0, 212, 0.957);
+}
+
+::-webkit-scrollbar-thumb{
+     background: linear-gradient(rgb(21, 0, 255),rgb(19, 172, 2));
+     border-radius: 50%;
+     width: 10px;
+     height: 10px;
+}
+
+
+/* common css */
+:root{
+     --padding:50px 70px ;
+}
+
+/* header section*/
+
+
+.header{
+
+     background: transparent;
+     backdrop-filter: blur(12px);
+     padding: 0.5rem 2rem;
+     position: sticky;
+     top: 0;
+     left: 0;
+     right: 0;
+     border-bottom: 1px solid rgb(91, 91, 91);
+     z-index: 999;
+
+
+
+     .nav-manu{
+          display: flex;
+          justify-content: space-around;
+          gap:120px;
+
+          .logo{
+               width: 60px;
+               height: 60px;
+               border-radius: 50%;
+               align-items: center;
+          }
+
+          .manu-links{
+
+               display: flex;
+               gap: 2.5rem;
+               background-color: black;
+               padding: 15px;
+               border-radius: 10px;
+               box-shadow: 0 0 12px rgb(132, 132, 132);
+               list-style-type: none;
+
+               & li{
+                    & a{
+                         text-decoration: none;
+                         font-size: 20px;
+                         font-weight: 900;
+                         color: white;
+                    }
+
+                    & a.active{
+                         color: rgb(252, 5, 178);
+                    }
+
+                    & a:hover{
+                         color: yellow;
+                         background-color: rgb(206, 4, 142);
+                         border-radius: 6px;
+                         padding: 5px 1px;
+
+                    }
+               }
+          }
+
+          .social-icon{
+               display: flex;
+               gap: 2rem;
+               font-size: 25px;
+               align-items: center;
+               cursor: pointer;
+
+          }
+
+          .social-icon a:nth-child(1){
+               color: rgb(111, 111, 255);
+          }
+
+          .social-icon a:nth-child(2){
+               color: rgb(250, 9, 85);
+          }
+          .social-icon a:nth-child(3){
+              color: red;
+
+          }
+     }
+}
+
+
+/* hero section */
+
+
+.hero-content{
+     background-image: url('images/banner.jpg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 80vh;
+     width: 100%;
+     position: relative;
+
+     .hero-text{
+          max-width: 600px;
+          align-items: flex-end;
+          margin-top: 10rem;
+          margin-left: 270px;
+          position: absolute;
+          color: white;
+     }
+
+     .btn{
+          align-items: flex-end;
+          margin-top:30%;
+          margin-left:35%;
+          position: absolute;
+
+          & button{
+
+         
+          background-color: rgb(252, 0, 206);
+          width: 150px;
+          height: 50px;
+          border: none;
+          color: aliceblue;
+          font-size: 20px;
+          font-weight: 900;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: 0.5s;
+
+         
+          }
+
+          & button:hover{
+               background-color: rgb(171, 87, 220);
+          }
+     }
+}
+
+ .hero-img{
+     margin-left:70%;
+     margin-top: 70px;
+     position: absolute;
+
+     .setting{
+          margin-top: -160px;
+          margin-left: 10.5rem;
+          & img{
+               width: 60px;
+               height: 60px;
+               position: absolute;
+
+          }
+     }
+ }
+
+ .setting{
+     & img{
+          animation: sujon;
+          animation-delay: 0.3s;
+          animation-duration: 0.01s;
+          animation-timing-function:linear;
+          animation-iteration-count: infinite;
+     }
+ }
+
+ @keyframes sujon{
+     0%{
+          transform: rotate(0deg);
+     }
+
+     100%{
+          transform: rotate(360deg);
+     }
+ }
+ 
+ /* bastob section */
+
+ .bastob{
+     padding: var(--padding);
+
+     .bastob-img {
+          & img{
+               border-radius: 50%;
+               box-shadow: 0 0 20px rgb(251, 93, 185);
+          }
+     }
+
+     .bastob-all{
+          display:grid;
+          grid-template-columns: repeat(2, 1fr);
+
+     }
+ }
+
+ .bastop-text{
+     color: white;
+     font-size: 12px;
+     margin-left: -50px;
+     & h2{
+          padding: 10px 0;
+     }
+ }
+
+ /* line section */
+ .line-content{
+     width: 100px;
+     height: 4px;
+     background-color: red;
+     animation-name: sujon11;
+     animation-duration: 7s;
+     animation-timing-function: linear;
+     animation-iteration-count:infinite;
+     animation-fill-mode: backwards;
+ }
+
+ @keyframes sujon11{
+     0%{
+          margin-left: 0%;
+          background-color: rgb(214, 222, 0);
+     }
+
+     15%{
+          background-color: blue;
+     }
+     30%{
+          background-color: rgb(0, 247, 148);
+     }
+     45%{
+          background-color: rgb(255, 0, 230);
+     }
+     60%{
+          background-color: aqua;
+     }
+     75%{
+          background-color: blueviolet;
+
+     }
+     90%{
+          margin-left: 90%;
+          background-color: crimson;
+     }
+ }
+
+ /* friend section */
+
+ .friend{
+     padding: var(--padding);
+
+     & h2{
+          font-size: 50px;
+          color: white;
+          align-items: center;
+          text-align: center;
+          padding: var(--padding);
+
+     }
+ }
+
+ .friend-content{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+
+     .friend-one{
+          background-color: white;
+          width: 320px;
+          height: 520px;
+          border-radius: 20px;
+          transition: all 0.4s;
+          cursor: pointer;
+          & img{
+               margin-top: 20px;
+               margin-left: 27px;
+               width: 270px;
+               height: 300px;
+               border-radius: 20px;
+          }
+
+          & div{
+               font-size: 14px;
+               padding: 22px 32px;
+          }
+
+          & button{
+               background-color: rgb(1, 140, 232);
+               color: white;
+               font-size: 20px;
+               border: none;
+               outline: none;
+               padding: 7px 40px;
+               font-weight: 900;
+               margin-top: 1rem;
+               margin-left: 60px;
+               border-radius: 12px;
+               cursor: pointer;
+               transition: 0.5s;
+          }
+
+          & button:hover{
+               background-color: rgb(4, 74, 144);
+
+          }
+     }
+
+     .friend-one:hover{
+          transform: translateY(-10px);
+     }
+
+     .friend-two{
+          background-color: white;
+          width: 320px;
+          height: 520px;
+          border-radius: 20px;
+          transition: all 0.4s;
+          cursor: pointer;
+          & img{
+               margin-top: 20px;
+               margin-left: 27px;
+               width: 270px;
+               height: 300px;
+               border-radius: 20px;
+          }
+
+          & div{
+               font-size: 14px;
+               padding: 22px 32px;
+          }
+
+          & button{
+               background-color: rgb(1, 140, 232);
+               color: white;
+               font-size: 20px;
+               border: none;
+               outline: none;
+               padding: 7px 40px;
+               font-weight: 900;
+               margin-top: 1rem;
+               margin-left: 60px;
+               border-radius: 12px;
+               cursor: pointer;
+               transition: 0.5s;
+          }
+
+          & button:hover{
+               background-color: rgb(4, 74, 144);
+
+          }
+     }
+
+     .friend-two:hover{
+          transform: translateY(-10px);
+     }
+
+
+
+
+     .friend-tree{
+          background-color: white;
+          width: 320px;
+          height: 520px;
+          border-radius: 20px;
+          transition: all 0.4s;
+          cursor: pointer;
+          & img{
+               margin-top: 20px;
+               margin-left: 27px;
+               width: 270px;
+               height: 300px;
+               border-radius: 20px;
+          }
+
+          & div{
+               font-size: 14px;
+               padding: 22px 32px;
+          }
+
+          & button{
+               background-color: rgb(1, 140, 232);
+               color: white;
+               font-size: 20px;
+               border: none;
+               outline: none;
+               padding: 7px 40px;
+               font-weight: 900;
+               margin-top: 1rem;
+               margin-left: 60px;
+               border-radius: 12px;
+               cursor: pointer;
+               transition: 0.5s;
+          }
+
+          & button:hover{
+               background-color: rgb(4, 74, 144);
+
+          }
+     }
+
+     .friend-tree:hover{
+          transform: translateY(-10px);
+     }
+
+
+
+
+
+     .friend-four{
+          background-color: white;
+          width: 320px;
+          height: 520px;
+          border-radius: 20px;
+          transition: all 0.4s;
+          cursor: pointer;
+          & img{
+               margin-top: 20px;
+               margin-left: 27px;
+               width: 270px;
+               height: 300px;
+               border-radius: 20px;
+          }
+
+          & div{
+               font-size: 14px;
+               padding: 22px 32px;
+          }
+
+          & button{
+               background-color: rgb(1, 140, 232);
+               color: white;
+               font-size: 20px;
+               border: none;
+               outline: none;
+               padding: 7px 40px;
+               font-weight: 900;
+               margin-top: 1rem;
+               margin-left: 60px;
+               border-radius: 12px;
+               cursor: pointer;
+               transition: 0.5s;
+          }
+
+          & button:hover{
+               background-color: rgb(4, 74, 144);
+
+          }
+     }
+
+     .friend-four:hover{
+          transform: translateY(-10px);
+     }
+
+
+ 
+
+ .friend-five{
+     background-color: white;
+     width: 320px;
+     height: 520px;
+     border-radius: 20px;
+     transition: all 0.4s;
+     cursor: pointer;
+     & img{
+          margin-top: 20px;
+          margin-left: 27px;
+          width: 270px;
+          height: 300px;
+          border-radius: 20px;
+     }
+
+     & div{
+          font-size: 14px;
+          padding: 22px 32px;
+     }
+
+     & button{
+          background-color: rgb(1, 140, 232);
+          color: white;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          padding: 7px 40px;
+          font-weight: 900;
+          margin-top: 1rem;
+          margin-left: 60px;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: 0.5s;
+     }
+
+     & button:hover{
+          background-color: rgb(4, 74, 144);
+
+     }
+}
+
+.friend-five:hover{
+     transform: translateY(-10px);
+}
+
+
+.friend-six{
+     background-color: white;
+     width: 320px;
+     height: 520px;
+     border-radius: 20px;
+     transition: all 0.4s;
+     cursor: pointer;
+     & img{
+          margin-top: 20px;
+          margin-left: 27px;
+          width: 270px;
+          height: 300px;
+          border-radius: 20px;
+     }
+
+     & div{
+          font-size: 14px;
+          padding: 22px 32px;
+     }
+
+     & button{
+          background-color: rgb(1, 140, 232);
+          color: white;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          padding: 7px 40px;
+          font-weight: 900;
+          margin-top: 1rem;
+          margin-left: 60px;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: 0.5s;
+     }
+
+     & button:hover{
+          background-color: rgb(4, 74, 144);
+
+     }
+}
+
+.friend-six:hover{
+     transform: translateY(-10px);
+}
+
+
+}
