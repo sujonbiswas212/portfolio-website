@@ -1,56 +1,48 @@
-ScrollReveal().reveal('.hero-text', {
+ScrollReveal().reveal('.hero-text h1', {
      delay: 100,
-     duration: 1000,
+     duration: 2000,
      origin:'left',
-     distance: '100px',
-     reset: true,
-     Interval:200
- });
-
-
- ScrollReveal().reveal('.bastop-text', {
-     delay: 100,
-     duration: 1000,
-     origin:'top',
      distance: '50px',
-     reset: true,
-     Interval:200
+     Interval:100
  });
 
-
- ScrollReveal().reveal('.btn', {
-     delay: 100,
-     duration: 1000,
-     origin:'right',
-     distance: '50px',
-     reset: true,
-     Interval:200
- });
-
- ScrollReveal().reveal('.bastob-img', {
-     delay: 100,
-     duration: 1000,
-     origin:'right',
-     distance: '50px',
-     reset: true,
-     Interval:200
- });
-
-
- ScrollReveal().reveal('.friend', {
+ ScrollReveal().reveal('.btn button', {
     delay: 100,
-    duration: 1000,
+    duration: 2000,
+    origin:'right',
+    distance: '50px',
+    Interval:100
+});
+
+ScrollReveal().reveal('.bastob-img img', {
+    delay: 100,
+    duration: 2000,
+    origin:'top',
+    distance: '50px',
+    Interval:100
+});
+
+ScrollReveal().reveal('.bastop-text h2', {
+    delay: 100,
+    duration: 2000,
     origin:'bottom',
     distance: '50px',
-    reset: true,
-    Interval:300
+    Interval:100
 });
 
 ScrollReveal().reveal('.friend h2', {
     delay: 100,
-    duration: 1000,
-    origin:'left',
+    duration: 2000,
+    origin:'top',
     distance: '50px',
-    reset: true,
-    Interval:300
+    Interval:100
+});
+
+
+ScrollReveal().reveal('.friend-content', {
+    delay: 100,
+    duration: 2000,
+    origin:'bottom',
+    distance: '50px',
+    Interval:100
 });

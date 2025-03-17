@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://kit.fontawesome.com/c924b405ea.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="mobile-view.css">
      <title>sujon biswas web designer</title>
 </head>
 <body>
@@ -12,22 +13,38 @@
      <!-- header section -->
      <header class="header">
           <nav class="nav-manu">
-               <img class="logo" src="images/Untitled design.png" alt="">
-               <ul class="manu-links">
+
+               <div class="logo">
+               <img  src="images/Untitled design.png" alt="">
+
+          </div>
+
+               <ul class="nav-links" id="navlinks">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Service</a></li>
                </ul>
+
+               
+               <!-- mobile manu bar -->
+               <div class="nav-toggle" id="navToggle"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
                <div class="social-icon">
                     <a href="https://facebook.com/sujonbiswas2025"><i class="fa-brands fa-facebook"></i></a>
                    <a href="https://www.youtube.com/channel/UCV7n5LSn6J8nrKeDNs4J_3A"><i class="fa-brands fa-youtube"></i></a>
                    <a href="https://www.youtube.com/channel/UCV7n5LSn6J8nrKeDNs4J_3A"><i class="fa-brands fa-instagram"></i></a>
-                    
-
                </div>
           </nav>
      </header>
+
+
+
+
 
 
      <!-- hero section -->
@@ -172,6 +189,7 @@
 
       <script src="https://unpkg.com/scrollreveal"></script>
       <script src="animation.js"></script>
+      <script src="./app.js"></script>
      
 </body>
 </html>
