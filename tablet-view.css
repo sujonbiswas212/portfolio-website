@@ -1,4 +1,4 @@
-@media (min-width:400px) and (max-width:600px){
+@media (min-width:600px) and (max-width:800px){
 
 
      nav{
@@ -49,23 +49,24 @@
 
 /* hero section */
 .hero{
-     padding: 5px 0px;
+     padding: 10px 0px;
      .hero-content{
           height: 100vh;
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+          position: relative;
 
           .btn{
                align-items: flex-end;
-               margin-top:70%;
+               margin-top:60%;
                margin-left:10%;
                position: absolute;
 
                & button{
-                    width: 100px;
-                    height: 40px;
-                    font-size: 16px;
-                    font-weight: 600;
+                    width: 150px;
+                    height: 50px;
+                    font-size: 18px;
+                    font-weight: 800;
                }
           }
      }
@@ -73,28 +74,38 @@
 }
 
 .hero-text h1{
-     margin-left: -16rem;
-     font-size: 14px;
+     margin-left: -15rem;
+     font-size: 16px;
      max-width: 250px;
 }
 
 .hero-img{
      margin-left: 30%;
-     margin-top: 60px;
+     margin-top: 250px;
      position: absolute;
+}
+
+.setting{
+     margin-top: -900px;
+     position: absolute;
+     & img{
+          margin-left: 50px;
+          margin-top: -350px;
+     }
 }
 
 /* bastob section */
 
 
 .bastob{
-     padding:50px 2px;
+     padding:70px 2px;
 
      .bastob-img {
-          margin-left: 50px;
+          margin: 0 auto;
           & img{
                border-radius: 50%;
-               box-shadow: 0 0 20px rgb(251, 93, 185);
+               box-shadow: 0 0 40px rgb(249, 137, 202);
+               border: 1px solid greenyellow;
                width: 370px;
                height: 370px;
           }
@@ -109,45 +120,40 @@
 
  .bastop-text{
      color: white;
-     font-size: 10px;
-   margin-left: 10px;
-   margin-top: 50px;
+     font-size: 12px;
+   margin-left: 12px;
+   margin-top: 60px;
 
      & h2{
-          padding: 7px 20px;
+          padding: 15px 30px;
      }
  }
 
 
   /* friend section */
 
-
-
  .friend-content{
      display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     gap: 20px;
-     align-items: center;
-     justify-content: center;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 10px;
      margin: 0 auto;
+     justify-content: center;
 
      .friend-one{
           background-color: white;
-          width: 320px;
-          height: 520px;
+          width: 280px;
+          height: 450px;
           border-radius: 20px;
-          transition: all 0.4s;
-          cursor: pointer;
           & img{
                margin-top: 20px;
                margin-left: 27px;
-               width: 270px;
-               height: 300px;
+               width: 230px;
+               height: 250px;
                border-radius: 20px;
           }
 
           & div{
-               font-size: 14px;
+               font-size: 13px;
                padding: 22px 32px;
           }
 
@@ -159,11 +165,8 @@
                outline: none;
                padding: 7px 40px;
                font-weight: 900;
-               margin-top: 1rem;
-               margin-left: 60px;
-               border-radius: 12px;
-               cursor: pointer;
-               transition: 0.5s;
+               margin-top: 1.5rem;
+               margin-left: 47px;
           }
 
           & button:hover{
@@ -178,21 +181,20 @@
 
      .friend-two{
           background-color: white;
-          width: 320px;
-          height: 520px;
+          width: 280px;
+          height: 450px;
+          margin-top: -10px;
           border-radius: 20px;
-          transition: all 0.4s;
-          cursor: pointer;
           & img{
                margin-top: 20px;
                margin-left: 27px;
-               width: 270px;
-               height: 300px;
+               width: 230px;
+               height: 250px;
                border-radius: 20px;
           }
 
           & div{
-               font-size: 14px;
+               font-size: 13px;
                padding: 22px 32px;
           }
 
@@ -204,11 +206,8 @@
                outline: none;
                padding: 7px 40px;
                font-weight: 900;
-               margin-top: 1rem;
-               margin-left: 60px;
-               border-radius: 12px;
-               cursor: pointer;
-               transition: 0.5s;
+               margin-top: 1.5rem;
+               margin-left: 47px;
           }
 
           & button:hover{
@@ -226,21 +225,19 @@
 
      .friend-tree{
           background-color: white;
-          width: 320px;
-          height: 520px;
+          width: 280px;
+          height: 450px;
           border-radius: 20px;
-          transition: all 0.4s;
-          cursor: pointer;
           & img{
                margin-top: 20px;
                margin-left: 27px;
-               width: 270px;
-               height: 300px;
+               width: 230px;
+               height: 250px;
                border-radius: 20px;
           }
 
           & div{
-               font-size: 14px;
+               font-size: 13px;
                padding: 22px 32px;
           }
 
@@ -252,11 +249,8 @@
                outline: none;
                padding: 7px 40px;
                font-weight: 900;
-               margin-top: 1rem;
-               margin-left: 60px;
-               border-radius: 12px;
-               cursor: pointer;
-               transition: 0.5s;
+               margin-top: 1.5rem;
+               margin-left: 47px;
           }
 
           & button:hover{
@@ -275,21 +269,19 @@
 
      .friend-four{
           background-color: white;
-          width: 320px;
-          height: 520px;
+          width: 280px;
+          height: 450px;
           border-radius: 20px;
-          transition: all 0.4s;
-          cursor: pointer;
           & img{
                margin-top: 20px;
                margin-left: 27px;
-               width: 270px;
-               height: 300px;
+               width: 230px;
+               height: 250px;
                border-radius: 20px;
           }
 
           & div{
-               font-size: 14px;
+               font-size: 13px;
                padding: 22px 32px;
           }
 
@@ -301,11 +293,8 @@
                outline: none;
                padding: 7px 40px;
                font-weight: 900;
-               margin-top: 1rem;
-               margin-left: 60px;
-               border-radius: 12px;
-               cursor: pointer;
-               transition: 0.5s;
+               margin-top: 1.5rem;
+               margin-left: 47px;
           }
 
           & button:hover{
@@ -323,21 +312,19 @@
 
  .friend-five{
      background-color: white;
-     width: 320px;
-     height: 520px;
+     width: 280px;
+     height: 450px;
      border-radius: 20px;
-     transition: all 0.4s;
-     cursor: pointer;
      & img{
           margin-top: 20px;
           margin-left: 27px;
-          width: 270px;
-          height: 300px;
+          width: 230px;
+          height: 250px;
           border-radius: 20px;
      }
 
      & div{
-          font-size: 14px;
+          font-size: 13px;
           padding: 22px 32px;
      }
 
@@ -349,11 +336,8 @@
           outline: none;
           padding: 7px 40px;
           font-weight: 900;
-          margin-top: 1rem;
-          margin-left: 60px;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: 0.5s;
+          margin-top: 1.5rem;
+          margin-left: 47px;
      }
 
      & button:hover{
@@ -369,21 +353,19 @@
 
 .friend-six{
      background-color: white;
-     width: 320px;
-     height: 520px;
+     width: 280px;
+     height: 450px;
      border-radius: 20px;
-     transition: all 0.4s;
-     cursor: pointer;
      & img{
           margin-top: 20px;
           margin-left: 27px;
-          width: 270px;
-          height: 300px;
+          width: 230px;
+          height: 250px;
           border-radius: 20px;
      }
 
      & div{
-          font-size: 14px;
+          font-size: 13px;
           padding: 22px 32px;
      }
 
@@ -395,11 +377,8 @@
           outline: none;
           padding: 7px 40px;
           font-weight: 900;
-          margin-top: 1rem;
-          margin-left: 60px;
-          border-radius: 12px;
-          cursor: pointer;
-          transition: 0.5s;
+          margin-top: 1.5rem;
+          margin-left: 47px;
      }
 
      & button:hover{
