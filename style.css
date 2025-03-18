@@ -45,7 +45,7 @@ html,body{
      border-bottom:1px solid gray ;
      top: 0;
      left: 0;
-     width: 90%;
+     width: 100%;
      position: fixed;
      z-index: 10001;
      transition: background-color 0.3s ease;
