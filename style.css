@@ -172,6 +172,10 @@ html,body{
      margin-top: 70px;
      position: absolute;
 
+     & img{
+          display: flex;
+     }
+
      .setting{
           margin-top: -160px;
           margin-left: 10.5rem;
